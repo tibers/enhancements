@@ -51,7 +51,7 @@ Items marked with (R) are required *prior to targeting to a milestone / release*
 
 ## Summary
 
-nodepools serve one purpose which is to tell the provider which sorts of nodes the cluster is seeking to provision. This strikes me as exactly backwards: The controller (eg: deployment, daemonset, statefulset) should declare a set of labels of nodes it is looking to run on, and along with that should be a hint to the cloud provider what nodes to provision. This should follow the pattern of the PersistentVolumeClaim where we should have something new like a NodeClaim. The autoscaler would function as normal to provision the nodes the deployment is looking for, and could be integrated.
+nodepools serve one purpose which is to tell the provider which sorts of nodes the cluster is seeking to provision. This strikes me as exactly backwards: The controller (eg: deployment, daemonset, statefulset) should declare a set of labels of nodes it is looking to run on, and along with that should be a hint to the cloud provider what nodes to provision. This could also follow the pattern of the PersistentVolumeClaim where we should have something new like a NodeClaim but I think labels are a better solution here. The autoscaler would function as normal to provision the nodes the deployment is looking for, and could be integrated.
 
 ## Motivation
 
