@@ -1,4 +1,4 @@
-# KEP-2411: CRI Container Log Rotation
+# TBD: Use labels not nodepools
 
 <!-- toc -->
 - [Release Signoff Checklist](#release-signoff-checklist)
